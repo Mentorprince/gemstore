@@ -1,0 +1,482 @@
+    /* ====== Base Styles ====== */
+    html {
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Inter', Arial, sans-serif;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+    }
+    
+    /* ====== Container ====== */
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    
+    /* ====== Headings ====== */
+    .title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #222;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #e05d3c;
+    }
+    
+    /* ====== Features Section ====== */
+    .features-section {
+        max-width: 100%;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        background-color: #e05d3c;
+      
+    }
+    .features-list {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        flex: 1;
+        max-width: 320px;
+    }
+    .feature {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #eafbe7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        flex-shrink: 0;
+    }
+    .feature-icon.premium { background: #f9f6ea; }
+    .feature-icon.fresh { background: #e7f7f9; }
+    .feature-icon.vet { background: #f9eaf6; }
+    .feature-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-title {
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 6px;
+        color: #222;
+        line-height: 1.2;
+    }
+    .feature-desc {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.4;
+    }
+    .center-image {
+        flex: 0 0 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        width: 400px;
+    }
+    .dog-food-img {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 6px solid #fff;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+        background: #eee;
+    }
+    
+    /* ====== CTA Section ====== */
+    .cta-section {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .cta-btn {
+        background: #f47c5c;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 16px 110px;
+        font-size: 1.08rem;
+        font-weight: 500;
+        cursor: pointer;
+        margin-bottom: 10px;
+        transition: background 0.2s;
+    }
+    .cta-btn:hover {
+        background: #e05d3c;
+    }
+    .guarantee {
+        font-size: 0.93rem;
+        color: #888;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+    .payment-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        margin-top: 4px;
+    }
+    .payment-icons img {
+        height: 15px;
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+        filter: grayscale(0.2);
+    }
+    
+    /* ====== Nutrition Section ====== */
+    .nutrition-section {
+        width: 100%;
+        max-width: 1100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 48px;
+        padding: 80px 200px;
+        background: #fafbfc;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+    }
+    .nutrition-content {
+        max-width: 600px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 105px 0 15px;
+        justify-content: center;
+        gap: 5px;
+        flex: 1;
+        min-width: 0;
+        min-height: 0;
+    }
+    .nutrition-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #222;
+        margin: 0 0 16px 0;
+        line-height: 1.2;
+    }
+    .nutrition-desc {
+        font-size: 1rem;
+        color: #444;
+        margin-bottom: 28px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .nutrition-keypoints {
+        margin-bottom: 32px;
+    }
+    .nutrition-keypoints-title {
+        font-weight: 700;
+        font-size: 1.08rem;
+        color: #222;
+        margin-bottom: 10px;
+    }
+    .nutrition-keypoints-list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .nutrition-keypoint {
+        display: flex;
+        align-items: flex-start;
+        gap: 18px;
+    }
+    .nutrition-keypoint-percent {
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: #f47c5c;
+        min-width: 54px;
+        line-height: 1;
+    }
+    .nutrition-keypoint-desc {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.4;
+    }
+    .nutrition-cta-btn {
+        background: #f47c5c;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 15px 32px;
+        font-size: 1.05rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.2s;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .nutrition-cta-btn:hover {
+        background: #e05d3c;
+    }
+    .nutrition-image img {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+        max-width: 420px;
+        margin-right: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+        height: 550px;
+        background-color: #444;
+    }
+    
+    /* ====== Benefits Section ====== */
+    .benefits-section {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 48px;
+        padding: 50px 200px;
+    }
+    .benefit-row {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        justify-content: center;
+    }
+    .benefit-row.reverse {
+        flex-direction: row-reverse;
+    }
+    .benefit-image {
+        flex: 1;
+        min-width: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .benefit-image img {
+        max-width: 400px;
+        max-height: 400px;
+        border-radius: 10px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+        object-fit: cover;
+        background: #eee;
+    }
+    .benefit-content {
+        flex: 1.2;
+        padding: 0 105px 0 15px;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .benefit-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #222;
+        margin-bottom: 16px;
+        line-height: 1.2;
+    }
+    .benefit-desc {
+        text-align: justify;
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.5;
+    }
+    
+    /* ====== Footer ====== */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #f8f9fa;
+        color: #666;
+    }
+    footer a {
+        color: #f47c5c;
+        text-decoration: none;
+    }
+
+    /* ====== Responsive Styles ====== */
+    /* Large devices (xxl, >1400px) */
+    @media (min-width: 1400px) {
+        .container,
+        .nutrition-section,
+        .benefits-section {
+            max-width: 1320px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .features-section,
+        .benefit-row {
+            gap: 60px;
+        }
+    }
+
+    /* Medium/Large devices (lg, md, <=1400px and >900px) */
+    @media (max-width: 1400px) and (min-width: 901px) {
+        .container,
+        .nutrition-section,
+        .benefits-section {
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .nutrition-section,
+        .benefits-section {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .features-section,
+        .benefit-row {
+            gap: 40px;
+        }
+    }
+
+    /* Small devices (sm, <=900px) */
+    @media (max-width: 900px) {
+        .container,
+        .nutrition-section,
+        .benefits-section {
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+        }
+        .features-section {
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        .center-image {
+            margin: 18px 0;
+            justify-content: center;
+        }
+        .nutrition-section {
+            flex-direction: column;
+            gap: 20px;
+            padding: 18px 0;
+            align-items: center;
+            justify-content: center;
+        }
+        .nutrition-content,
+        .nutrition-image {
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            align-items: center;
+            justify-content: center;
+        }
+        .nutrition-img-wrap {
+            min-width: 0;
+            min-height: 0;
+            width: 100%;
+            max-width: 240px;
+            max-height: 240px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .nutrition-img-wrap img {
+            max-width: 100%;
+        }
+        .benefit-row,
+        .benefit-row.reverse {
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
+            justify-content: center;
+        }
+        .benefit-image img {
+            max-width: 100%;
+        }
+        .benefits-section {
+            gap: 20px;
+            padding: 18px 0;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    /* Extra small devices (xs, <=600px) */
+    @media (max-width: 600px) {
+        .container {
+            padding: 0 4px;
+        }
+        .dog-food-img {
+            width: 100px;
+            height: 100px;
+        }
+        .features-list {
+            max-width: 100%;
+            gap: 14px;
+        }
+        .feature {
+            gap: 10px;
+        }
+        .nutrition-section {
+            padding: 0 4px;
+            text-align: center;
+            gap: 10px;
+        }
+        .nutrition-content,
+        .nutrition-image {
+            padding-left: 0;
+            padding-right: 0;
+            align-items: center;
+            justify-content: center;
+        }
+        .nutrition-title {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        .nutrition-img-wrap {
+            max-width: 100%;
+            max-height: 100px;
+        }
+        .nutrition-img-wrap img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .nutrition-keypoints-list {
+            gap: 8px;
+        }
+        .benefit-title {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        .benefit-image img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .benefits-section {
+            padding: 0 4px;
+            gap: 10px;
+        }
+    }
